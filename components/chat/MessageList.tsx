@@ -4,14 +4,14 @@ import MessageBubble from "./MessageBubble";
 import type { Source } from "@/types";
 
 const SUGGESTIONS = [
-  "What is Porter's Five Forces?",
-  "Explain the BCG matrix",
-  "How does DCF valuation work?",
-  "What is a SWOT analysis?",
-  "Explain competitive advantage",
+  "What are the paper submission guidelines at MIVA?",
+  "How should I format citations in my MBA paper?",
+  "Explain Porter's Five Forces for my strategy paper",
+  "What is the VRIO framework?",
+  "How do I structure a business case analysis?",
   "What is working capital management?",
-  "How does the balanced scorecard work?",
-  "Explain economies of scale",
+  "Explain competitive advantage with examples",
+  "How does DCF valuation work?",
 ];
 
 interface Props {

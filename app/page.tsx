@@ -2,6 +2,7 @@ import Link from "next/link";
 import Hero from "@/components/landing/Hero";
 import FeatureCards from "@/components/landing/FeatureCards";
 import WhyRbeka from "@/components/landing/WhyRbeka";
+import MivaTips from "@/components/landing/MivaTips";
 
 export default function HomePage() {
   return (
@@ -41,6 +42,7 @@ export default function HomePage() {
       <main className="max-w-6xl mx-auto">
         <Hero />
         <FeatureCards />
+        <MivaTips />
         <WhyRbeka />
       </main>
 

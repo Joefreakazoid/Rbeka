@@ -7,31 +7,25 @@ export const metadata = {
 
 export default function ChatPage() {
   return (
-    <div className="flex flex-col h-screen pb-14 bg-gray-50">
-      <header className="sticky top-0 z-40 bg-white border-b border-gray-100 shrink-0">
+    <div className="flex flex-col h-screen pb-14 bg-[#FAF5F5]">
+      <header className="sticky top-0 z-40 bg-white border-b border-[#E0E0E0] shrink-0">
         <div className="h-14 px-4 flex items-center gap-4">
           <Link
             href="/"
-            className="flex items-center gap-1.5 text-sm text-gray-500 hover:text-gray-700 transition-colors"
+            className="flex items-center gap-1.5 text-sm text-[#4A4A4A] hover:text-[#C1292E] transition-colors"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              className="w-4 h-4"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4">
               <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
             </svg>
             Back
           </Link>
-          <div className="flex-1 flex justify-center">
-            <span className="font-semibold text-gray-900">Rbeka</span>
+          <div className="flex-1 flex justify-center items-center gap-2">
+            <img src="/rbeka-logo.svg" alt="Rbeka" className="h-6 w-auto" />
+            <span className="font-semibold text-[#1A1A1A]">Rbeka</span>
           </div>
           <Link
             href="/admin"
-            className="p-2 rounded-lg text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors"
+            className="p-2 rounded-lg text-[#9A9A9A] hover:text-[#C1292E] hover:bg-[#F2D4D4] transition-colors"
             aria-label="Settings"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-5 h-5">

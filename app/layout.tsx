@@ -9,11 +9,12 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Rbeka — Your MBA Study Companion",
+  title: "Rbeka — MBA Knowledge Assistant",
   description:
     "Ask questions about MBA coursework and get instant, well-sourced answers from class notes.",
+  icons: { icon: "/rbeka-logo.svg" },
   openGraph: {
-    title: "Rbeka — Your MBA Study Companion",
+    title: "Rbeka — MBA Knowledge Assistant",
     description:
       "Ask questions about MBA coursework and get instant, well-sourced answers from class notes.",
   },

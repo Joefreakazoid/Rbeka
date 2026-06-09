@@ -6,32 +6,23 @@ import MivaTips from "@/components/landing/MivaTips";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-gray-100">
+    <div className="min-h-screen bg-[#FAF5F5]">
+      <header className="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-[#E0E0E0]">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="white"
-                className="w-5 h-5"
-              >
-                <path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-              </svg>
-            </div>
-            <span className="font-bold text-gray-900 text-lg">Rbeka</span>
+            <img src="/rbeka-logo.svg" alt="Rbeka" className="h-8 w-auto" />
+            <span className="font-bold text-[#1A1A1A] text-lg">Rbeka</span>
           </div>
           <div className="flex items-center gap-3">
             <Link
               href="/chat"
-              className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 transition-colors"
+              className="rounded-lg bg-[#C1292E] px-4 py-2 text-sm font-semibold text-white hover:bg-[#8B1A1A] transition-colors"
             >
               Start Chatting
             </Link>
             <Link
               href="/admin"
-              className="text-sm text-gray-500 hover:text-gray-700 transition-colors"
+              className="text-sm text-[#4A4A4A] hover:text-[#C1292E] transition-colors"
             >
               Admin
             </Link>
@@ -46,14 +37,14 @@ export default function HomePage() {
         <WhyRbeka />
       </main>
 
-      <footer className="border-t border-gray-200 bg-white mt-8">
-        <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-gray-500">
-          <span>© {new Date().getFullYear()} Rbeka — MBA Study Companion</span>
+      <footer className="border-t border-[#E0E0E0] bg-white mt-8">
+        <div className="max-w-6xl mx-auto px-4 py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-[#4A4A4A]">
+          <span>© {new Date().getFullYear()} Rbeka — MBA Knowledge Assistant</span>
           <a
             href="https://www.linkedin.com/in/freakazoid"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-600 transition-colors"
+            className="hover:text-[#C1292E] transition-colors"
           >
             Built by an MBA Alumnus
           </a>

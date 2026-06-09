@@ -29,7 +29,7 @@ export default function ChatInput({ input, isLoading, onChange, onSubmit }: Prop
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex items-end gap-3 p-4 bg-white border-t border-gray-100">
+    <form onSubmit={onSubmit} className="flex items-end gap-3 p-4 bg-white border-t border-[#E0E0E0]">
       <textarea
         ref={textareaRef}
         value={input}
@@ -38,12 +38,12 @@ export default function ChatInput({ input, isLoading, onChange, onSubmit }: Prop
         placeholder="Ask a question about your MBA coursework…"
         rows={1}
         disabled={isLoading}
-        className="flex-1 resize-none rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-60 transition-all"
+        className="flex-1 resize-none rounded-2xl border border-[#E0E0E0] bg-[#FAF5F5] px-4 py-3 text-sm text-[#1A1A1A] placeholder-[#9A9A9A] focus:outline-none focus:ring-2 focus:ring-[#C1292E] focus:border-transparent disabled:opacity-60 transition-all"
       />
       <button
         type="submit"
         disabled={!input.trim() || isLoading}
-        className="h-10 w-10 rounded-full bg-blue-600 flex items-center justify-center text-white shadow hover:bg-blue-700 disabled:opacity-40 disabled:cursor-not-allowed transition-colors shrink-0"
+        className="h-10 w-10 rounded-full bg-[#C1292E] flex items-center justify-center text-white shadow hover:bg-[#8B1A1A] disabled:opacity-40 disabled:cursor-not-allowed transition-colors shrink-0"
         aria-label="Send message"
       >
         {isLoading ? (

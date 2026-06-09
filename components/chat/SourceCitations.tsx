@@ -9,7 +9,7 @@ export default function SourceCitations({ sources }: Props) {
 
   return (
     <div className="mt-3 flex flex-wrap items-center gap-2">
-      <span className="text-xs text-gray-400 font-medium">Sources:</span>
+      <span className="text-xs text-[#9A9A9A] font-medium">Sources:</span>
       {sources.map((src, i) => (
         <a
           key={i}
@@ -17,7 +17,7 @@ export default function SourceCitations({ sources }: Props) {
           target={src.url ? "_blank" : undefined}
           rel="noopener noreferrer"
           title={`Similarity: ${(src.similarity * 100).toFixed(0)}%`}
-          className="inline-flex items-center gap-1 rounded-full border border-blue-200 bg-blue-50 px-2.5 py-0.5 text-xs text-blue-700 hover:bg-blue-100 transition-colors"
+          className="inline-flex items-center gap-1 rounded-full border border-[#F2D4D4] bg-[#FAF5F5] px-2.5 py-0.5 text-xs text-[#C1292E] hover:bg-[#F2D4D4] transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

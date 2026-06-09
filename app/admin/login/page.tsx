@@ -30,48 +30,35 @@ export default function AdminLogin() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#FAF5F5] flex items-center justify-center px-4">
       <div className="w-full max-w-sm">
         <div className="text-center mb-8">
-          <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center mx-auto mb-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              strokeWidth={2}
-              className="w-6 h-6"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-            </svg>
+          <div className="w-16 h-16 rounded-2xl bg-[#F2D4D4] flex items-center justify-center mx-auto mb-4">
+            <img src="/rbeka-logo.svg" alt="Rbeka" className="w-10 h-10 object-contain" />
           </div>
-          <h1 className="text-xl font-bold text-gray-900">Admin Access</h1>
-          <p className="text-sm text-gray-500 mt-1">Enter your admin password to continue</p>
+          <h1 className="text-xl font-bold text-[#1A1A1A]">Admin Access</h1>
+          <p className="text-sm text-[#4A4A4A] mt-1">Enter your admin password to continue</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-gray-200 p-6 space-y-4">
+        <form onSubmit={handleSubmit} className="bg-white rounded-2xl border border-[#E0E0E0] p-6 space-y-4">
           <div>
-            <label className="block text-xs font-medium text-gray-600 mb-1.5">
-              Password
-            </label>
+            <label className="block text-xs font-medium text-[#4A4A4A] mb-1.5">Password</label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter admin password"
               autoFocus
-              className="w-full rounded-lg border border-gray-200 bg-gray-50 px-3 py-2.5 text-sm text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full rounded-lg border border-[#E0E0E0] bg-[#FAF5F5] px-3 py-2.5 text-sm text-[#1A1A1A] focus:outline-none focus:ring-2 focus:ring-[#C1292E]"
             />
           </div>
 
-          {error && (
-            <p className="text-sm text-red-600">{error}</p>
-          )}
+          {error && <p className="text-sm text-[#C1292E]">{error}</p>}
 
           <button
             type="submit"
             disabled={loading || !password}
-            className="w-full rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="w-full rounded-xl bg-[#C1292E] px-4 py-3 text-sm font-semibold text-white hover:bg-[#8B1A1A] disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             {loading ? "Signing in…" : "Sign In"}
           </button>

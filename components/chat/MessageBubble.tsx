@@ -12,20 +12,18 @@ export default function MessageBubble({ message, sources }: Props) {
   const content = message.parts.filter(isTextUIPart).map((p) => p.text).join("");
 
   return (
-    <div
-      className={`flex ${isUser ? "justify-end" : "justify-start"} mb-4`}
-    >
+    <div className={`flex ${isUser ? "justify-end" : "justify-start"} mb-4`}>
       {!isUser && (
-        <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-xs font-bold shrink-0 mt-1 mr-2">
-          R
+        <div className="w-8 h-8 rounded-full bg-[#C1292E] flex items-center justify-center shrink-0 mt-1 mr-2 overflow-hidden">
+          <img src="/rbeka-logo.svg" alt="Rbeka" className="w-6 h-6 object-contain" />
         </div>
       )}
       <div className={`max-w-[80%] ${isUser ? "items-end" : "items-start"} flex flex-col`}>
         <div
           className={`rounded-2xl px-4 py-3 text-sm leading-relaxed whitespace-pre-wrap ${
             isUser
-              ? "bg-blue-600 text-white rounded-br-sm"
-              : "bg-white border border-gray-200 text-gray-800 rounded-bl-sm shadow-sm"
+              ? "bg-[#C1292E] text-white rounded-br-sm"
+              : "bg-[#F2D4D4] text-[#1A1A1A] rounded-bl-sm"
           }`}
         >
           {content}
